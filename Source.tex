@@ -9,6 +9,7 @@
 \usepackage{adjustbox}
 
 \title{Билеты по общей физике. 4-й семестр. Оптика.}
+\author{Нехаев Александр}
 
 \begin{document}
 	\maketitle
@@ -102,7 +103,7 @@
 		\nabla^2 f+k^2 f=0
 	\end{equation}
 	где $k=\frac{\omega}{v}$ волновое число. Полученное уравнение для комплексных амплитуд называется \textbf{уравнением Гельмгольца}.
-	\chapter{Уравнения плоской и сферической волн.}
+	\chapter{Плоские и сферические волны}
 	\section{Интерференция плоских волн}
 	Рассмотрим результат интерференции двух плоских волн, волновые векторы $\vec{k}_1$ и $\vec{k}_2$ которых составляют углы $\pm\alpha$ с нормалью к плоскости.
 	\begin{equation*}
@@ -145,6 +146,69 @@
 		и в комплексной форме комплексная амплитуда для сферической волны имеет вид
 		\begin{equation*}
 			f\left(\vec{r}\right)=\frac{a}{r}e^{i\varphi_0}e^{ikr}=\frac{a_0}{r}e^{ikr+\varphi_0}
-		\end{equation*}
+		\end{equation*}		
 	\end{enumerate}
+	\section{Интерференция монохроматических волн}
+	Пусть в пространстве распространяются две \textbf{монохроматические волны} с одинаковой частотой $\omega$:
+	\begin{equation*}
+		E_1\left(\vec{r},t\right)=a_1\left(\vec{r}\right)\cos\left(\omega t-\varphi_1\left(\vec{r}\right)\right),\quad E_2\left(\vec{r},t\right)=a_2\left(\vec{r}\right)\cos\left(\omega t-\varphi_2\left(\vec{r}\right)\right)
+	\end{equation*}
+	Согласно принципу суперпозиции колебательный процесс в любой точке наблюдения есть сумма гармонических колебаний. Выведем формулу для результирующего колебания:\par
+	Нам известно, что суммарная проекция вектора $\vec{a}\left(t\right)$ равна сумме проекций на эту же ось. Поэтому результирующее колебание может быть изображено вектором амплитуды $\vec{a}\left(t\right)=\vec{a}_1\left(t\right)+\vec{a}_2\left(t\right)$, вращающимся вокруг точки $O$ с той же угловой скоростью $\omega$, что и $\vec{a}_1$ и $\vec{a}_2$. Результирующее колебание должно быть также гармоническим с частотой $\omega$: $x=a\cos\left(\omega t+\varphi\right)$. По правилу сложения векторов найдем суммарную амплитуду:\\
+	\begin{equation*}
+		a\left(t\right)^2=\left(x_1+x_2\right)^2+\left(y_1+y_2\right)^2=x_1^2+2x_1x_2+x^2+y_1^2+2y_1y_2+y_2^2=
+	\end{equation*}
+	\begin{equation*}
+		=a^2_1\left(t\right)\cos^2{\varphi_1}+2a_1\left(t\right)a_2\left(t\right)\cos{\varphi_1}\cos{\varphi_2}+a^2_2\left(t\right)\cos^2{\varphi_2}+a_1^2\left(t\right)\sin^2{\varphi_1}+
+	\end{equation*}
+	\begin{equation*}+2a_1\left(t\right)a_2\left(t\right)\sin{\varphi_1}\sin{\varphi_2}+a_2^2\left(t\right)\sin^2{\varphi_2}=a_1^2\left(t\right)+a_2^2\left(t\right)+2a_1\left(t\right)a_2\left(t\right)\cdot	
+	\end{equation*}
+	\begin{equation*}
+	\cdot\left[\frac{1}{2}\cos\left(\varphi_2-\cdot\varphi_1\right)-\frac{1}{2}\cos\left(\varphi_2+\varphi_1\right)+\frac{1}{2}\cos\left(\varphi_2-\varphi_1\right)+\frac{1}{2}\cos\left(\varphi_2+\varphi_1\right)\right]=
+	\end{equation*}
+	\begin{equation*}
+		=a_1^2\left(t\right)+a_2^2\left(t\right)+2a_1\left(t\right)a_2\left(t\right)\cos\left(\varphi_2-\varphi_1\right).
+	\end{equation*}	
+	Получили
+	\begin{equation}
+		a\left(t\right)^2=a_1^2\left(t\right)+a_2^2\left(t\right)+2a_1a_2\cos\Delta\left(\vec{r}\right)
+	\end{equation}
+	где $\Delta\left(\vec{r}\right)=\varphi_2\left(\vec{r}\right)-\varphi_1\left(\vec{r}\right)$ — разность фаз слагаемых колебаний в точке наблюдения. Явление наложения волн, при котором результирующая интенсивность оказывается не равной в общем случае сумме интенсивностей слагаемых волн, называется \textit{\textbf{интерференцией}}.
+	\section{Видность полос}
+	Контраст интерференционной картины принято характеризовать величиной \textit{видности} $V$, определяемой равенством
+	\begin{equation}
+		V=\frac{I_{\max}-I_{\min}}{I_{\max}+I_{\min}}=\frac{2a_1a_2}{a_1^2+a_2^2}.
+	\end{equation}
+	\chapter{Понятие о временной когерентности}
+	\section{Влияние немонохроматичности света на видность интерференционных полос.}
+	С ростом $\tau$ – времени относительного запаздывания, видность (контраст) постепенно уменьшается. Наконец при $\tau\gtrsim\tau_0$ интерференционные полосы исчезают полностью.
+	\section{Понятие о временной когерентности.}
+	$\tau_0$ — характерное время жизни атома в возбужденном состоянии.\par
+	Приходим к представлению о \textit{квазимонохроматическом процессе} и можем записать колебания в виде
+	\begin{equation*}
+		E\left(t\right)=a\left(t\right)\cos\left(\omega_0t-\varphi\left(t\right)\right)
+	\end{equation*}
+	где $a\left(t\right)$ и $\varphi\left(t\right)$ — медленно и хаотически меняющиеся функции. Характерный временной масштаб их изменения $\tau_0$ носит название \textit{времени корреляции} или \textit{времени когерентности}. Принято говорить, что значение $a\left(t\right)$ и $a\left(t+\tau\right)$ \textit{коррелированы} при $\tau<\tau_0$ и \textit{некоррелированы} при $\tau>\tau_0$. Это же относится и к значениям фазы $\varphi\left(t\right)$ и $\varphi\left(t+\tau\right)$.
+	\section{Связь когерентности с шириной спектра: соотношение неопределённостей.}
+	Наиболее важной является связь между шириной спектра $\Delta\omega$ (интервалом частот, в котором спектральная интенсивность заметно отличается от нуля) и временем когерентности $\tau_0$ (интервал значений $\tau$, в котором отлична от нуля функция когерентности $\Gamma\left(\tau\right)$).\par
+	Рассмотрим простой пример. Пусть функция $I\left(\omega\right)$ имеет вид
+	\begin{equation*}
+		I\left(\omega\right)=\begin{cases}
+			I_0, & \left|\omega-\omega_0\right|<\Delta\omega/2,\\
+			0, & \left|\omega-\omega_0\right|>\Delta\omega/2;
+		\end{cases}
+	\end{equation*}
+	Тогда используя соотношение $dI=2I\left(\omega\right)\left[1+\cos\left(\frac{\omega}{c}\Delta\right)\right]d\omega$ найдем
+	\begin{equation}
+		I=2I_0\int^{\omega+\Delta\omega/2}_{\omega-\Delta\omega/2}\left(1+\cos\left(\frac{\omega}{c}\Delta\right)\right)d\omega
+	\end{equation}
+	В результате интегрирования получим
+	\begin{equation}
+		I=2I_0\left\{1+\frac{\sin\left[\left(\Delta\omega/2c\right)\Delta\right]}{\left(\Delta\omega/2c\right)\Delta}\cos\left(\frac{\omega_0}{c}\Delta\right)\right\}
+	\end{equation}
+	допустимую разность хода $\Delta_{\max}$ можно оценить из условия $\frac{\Delta\omega}{2c}\Delta_{\max}=\pi$, когда выражение для огибающей обращается в нуль:
+	\begin{equation*}
+		\Delta_{\max}\approx\frac{2\pi c}{\Delta\omega}
+	\end{equation*}
+	Сопоставляя выражения для максимально допустимой разности хода, полученные при временном ($\Delta_{\max}\approx c\tau_0$) 
 \end{document}
